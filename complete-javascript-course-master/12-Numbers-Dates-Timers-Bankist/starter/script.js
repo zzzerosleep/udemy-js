@@ -188,7 +188,7 @@ const startLogOutTimer = function () {
     time--;
   };
   //set time to 5 mins
-  let time = 120;
+  let time = 300;
 
   //call timer every second
   tick();
@@ -324,7 +324,7 @@ btnClose.addEventListener('click', function (e) {
 let sorted = false;
 btnSort.addEventListener('click', function (e) {
   e.preventDefault();
-  displayMovements(acc.movements, !sorted);
+  displayMovements(currentAccount, !sorted);
   sorted = !sorted;
 });
 /////////////////////////////////////////////////
